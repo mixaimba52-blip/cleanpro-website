@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CleanPro — демонстрационный премиальный сайт клининговой компании. Пример корпоративного одностраничного сайта для малого бизнеса.">
+    <title>CleanPro — Премиальный клининг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Перейти к содержимому</a>
+
+    <!-- Шапка сайта -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a class="logo" href="#hero" aria-label="CleanPro — на главную">
+                <span class="logo-mark">Clean</span><span class="logo-accent">Pro</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="navMenu" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#services">Услуги</a></li>
+                    <li><a class="nav-link" href="#benefits">Преимущества</a></li>
+                    <li><a class="nav-link" href="#about">О компании</a></li>
+                    <li><a class="nav-link" href="#pricing">Тарифы</a></li>
+                    <li><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+                <a class="btn btn-primary nav-cta" href="#contact">Связаться с нами</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="eyebrow">Премиальный клининг · Демо-проект</p>
+                    <h1>Безупречная чистота для пространств, где важна каждая деталь</h1>
+                    <p class="hero-text">
+                        CleanPro — вымышленная клининговая компания, созданная для демонстрации премиального
+                        корпоративного сайта. Мы показываем, как клининговый бизнес может выглядеть уверенно,
+                        современно и достойно доверия.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contact">Запросить консультацию</a>
+                        <a class="btn btn-outline" href="#services">Наши услуги</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <span class="trust-value">Премиум</span>
+                            <span class="trust-label">подход к сервису</span>
+                        </div>
+                        <div class="trust-divider" aria-hidden="true"></div>
+                        <div class="trust-item">
+                            <span class="trust-value">24/7</span>
+                            <span class="trust-label">формат связи</span>
+                        </div>
+                        <div class="trust-divider" aria-hidden="true"></div>
+                        <div class="trust-item">
+                            <span class="trust-value">Демо</span>
+                            <span class="trust-label">пример для портфолио</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-media reveal">
+                    <div class="media-frame">
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80"
+                            alt="Современный светлый интерьер с чистым пространством"
+                            class="media-image"
+                            width="1400"
+                            height="1000"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+                        <div class="media-overlay-card">
+                            <p class="overlay-title">CleanPro Standard</p>
+                            <p class="overlay-text">Чистота, порядок и внимание к деталям в каждом помещении.</p>
+                        </div>
+                    </div>
+                    <div class="media-accent" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Услуги</p>
+                    <h2 class="section-title">Решения для дома и бизнеса</h2>
+                    <p class="section-description">
+                        Продуманная структура услуг помогает клиенту быстро выбрать подходящий формат уборки.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="card service-card reveal">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Светлая гостиная в современном жилом интерьере" loading="lazy" decoding="async" width="900" height="650">
+                        </div>
+                        <div class="service-body">
+                            <p class="card-tag">Жилые помещения</p>
+                            <h3>Уборка квартир</h3>
+                            <p>Бережная поддерживающая и разовая уборка жилых пространств с вниманием к деталям и комфорту.</p>
+                        </div>
+                    </article>
+
+                    <article class="card service-card reveal">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="Современный офис с чистым рабочим пространством" loading="lazy" decoding="async" width="900" height="650">
+                        </div>
+                        <div class="service-body">
+                            <p class="card-tag">Бизнес</p>
+                            <h3>Уборка офисов</h3>
+                            <p>Профессиональная уборка рабочих зон, переговорных и общих пространств для аккуратного образа компании.</p>
+                        </div>
+                    </article>
+
+                    <article class="card service-card reveal">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80" alt="Чистый и светлый современный интерьер" loading="lazy" decoding="async" width="900" height="650">
+                        </div>
+                        <div class="service-body">
+                            <p class="card-tag">Глубокая чистота</p>
+                            <h3>Генеральная уборка</h3>
+                            <p>Комплексная уборка помещений с тщательной проработкой труднодоступных зон и поверхностей.</p>
+                        </div>
+                    </article>
+
+                    <article class="card service-card reveal">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Помещение после ремонта, подготовленное к финальной уборке" loading="lazy" decoding="async" width="900" height="650">
+                        </div>
+                        <div class="service-body">
+                            <p class="card-tag">После работ</p>
+                            <h3>Уборка после ремонта</h3>
+                            <p>Удаление строительной пыли и следов ремонта, чтобы помещение было готово к комфортному использованию.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section section-soft" id="benefits">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Преимущества</p>
+                    <h2 class="section-title">Сервис, которому доверяют</h2>
+                    <p class="section-description">
+                        Премиальный подход — это не только чистота, но и спокойствие клиента на каждом этапе взаимодействия.
+                    </p>
+                </div>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Профессиональная команда</h3>
+                        <p>Слаженный подход к работе и уважительное отношение к пространству клиента.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6l4 2"/></svg>
+                        </div>
+                        <h3>Внимание к деталям</h3>
+                        <p>Аккуратность в мелочах формирует общее ощущение чистоты и порядка.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                        </div>
+                        <h3>Удобное обслуживание</h3>
+                        <p>Понятный процесс заказа и комфортная коммуникация на каждом этапе.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                        </div>
+                        <h3>Индивидуальный подход</h3>
+                        <p>Формат уборки подбирается под задачи помещения, график и ожидания клиента.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-media reveal">
+                    <div class="media-frame">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80" alt="Профессиональная уборка светлого интерьера" loading="lazy" decoding="async" width="1200" height="900">
+                    </div>
+                    <div class="about-note">
+                        <span class="about-note-value">CleanPro</span>
+                        <span class="about-note-text">Демонстрационный проект для портфолио</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <p class="eyebrow">О компании</p>
+                    <h2 class="section-title left-align">Профессиональный образ, который вызывает доверие</h2>
+                    <p class="about-lead">
+                        CleanPro — вымышленная клининговая компания, созданная для демонстрации того, как премиальный
+                        корпоративный сайт может представить услуги малого бизнеса.
+                    </p>
+                    <p>
+                        Мы сосредоточились на чистой композиции, понятной структуре и спокойной визуальной подаче.
+                        Такой подход помогает клиенту быстро получить нужную информацию, оценить уровень сервиса
+                        и сделать первый шаг к обращению.
+                    </p>
+                    <div class="about-points">
+                        <div class="about-point">
+                            <span class="point-mark" aria-hidden="true"></span>
+                            <div>
+                                <h3>Продуманная структура</h3>
+                                <p>Каждый блок ведёт пользователя от знакомства с компанией к контакту.</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <span class="point-mark" aria-hidden="true"></span>
+                            <div>
+                                <h3>Премиальная подача</h3>
+                                <p>Сдержанная палитра, типографика и пространство создают ощущение качества.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Тарифы -->
+        <section class="section section-soft" id="pricing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Тарифы</p>
+                    <h2 class="section-title">Прозрачные пакеты услуг</h2>
+                    <p class="section-description">
+                        Цены ниже являются демонстрационными и используются только для примера оформления тарифного блока.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="card pricing-card reveal">
+                        <div class="pricing-top">
+                            <p class="plan-name">Базовый</p>
+                            <p class="plan-price">от 2 000 ₽</p>
+                            <p class="plan-note">Демонстрационная цена</p>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Поддерживающая уборка помещений</li>
+                            <li>Чистка основных поверхностей</li>
+                            <li>Уход за полами и удаление пыли</li>
+                            <li>Оптимально для небольших пространств</li>
+                        </ul>
+                        <a class="btn btn-outline-dark plan-btn" href="#contact">Выбрать пакет</a>
+                    </article>
+
+                    <article class="card pricing-card featured reveal">
+                        <p class="popular-badge">Рекомендуемый</p>
+                        <div class="pricing-top">
+                            <p class="plan-name">Стандарт</p>
+                            <p class="plan-price">от 4 500 ₽</p>
+                            <p class="plan-note">Демонстрационная цена</p>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Расширенная уборка комнат</li>
+                            <li>Кухня и санитарные зоны</li>
+                            <li>Повышенное внимание к деталям</li>
+                            <li>Подходит для квартир и офисов</li>
+                        </ul>
+                        <a class="btn btn-primary plan-btn" href="#contact">Выбрать пакет</a>
+                    </article>
+
+                    <article class="card pricing-card reveal">
+                        <div class="pricing-top">
+                            <p class="plan-name">Премиум</p>
+                            <p class="plan-price">от 7 000 ₽</p>
+                            <p class="plan-note">Демонстрационная цена</p>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Генеральная комплексная уборка</li>
+                            <li>Труднодоступные зоны и детали</li>
+                            <li>Подготовка после ремонта</li>
+                            <li>Индивидуальный объём работ</li>
+                        </ul>
+                        <a class="btn btn-outline-dark plan-btn" href="#contact">Выбрать пакет</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-content reveal">
+                    <p class="eyebrow eyebrow-light">Контакты</p>
+                    <h2 class="section-title left-align light">Готовы создать безупречную чистоту?</h2>
+                    <p class="contact-lead">
+                        В реальном проекте здесь можно разместить форму заявки или интеграцию с мессенджером.
+                        В этом демо используются только примерные контакты и честные способы связи.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="detail-label">Телефон (демо)</span>
+                            <a class="detail-value" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">Email (демо)</span>
+                            <a class="detail-value" href="mailto:info@cleanpro.example">info@cleanpro.example</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">Локация (демо)</span>
+                            <p class="detail-value">Москва, демонстрационный адрес</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card reveal">
+                    <p class="contact-card-eyebrow">Связь с CleanPro</p>
+                    <h3>Обсудить детали уборки</h3>
+                    <p>
+                        Выберите удобный способ связи. Кнопки ниже используют реальные `mailto:` и `tel:` ссылки,
+                        но не отправляют данные на сервер.
+                    </p>
+                    <a class="btn btn-primary btn-full" href="mailto:info@cleanpro.example?subject=Запрос%20по%20уборке%20CleanPro">Написать на email</a>
+                    <a class="btn btn-outline-light btn-full" href="tel:+70000000000">Позвонить по демо-номеру</a>
+                    <p class="demo-note">
+                        * Компания CleanPro, контакты и цены являются демонстрационными и используются только для примера оформления сайта.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="logo footer-logo" href="#hero" aria-label="CleanPro — на главную">
+                    <span class="logo-mark">Clean</span><span class="logo-accent">Pro</span>
+                </a>
+                <p class="footer-text">
+                    Демонстрационный премиальный сайт клининговой компании для портфолио и презентации услуг веб-разработки.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <p class="footer-title">Навигация</p>
+                <ul class="footer-links">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-title">Контакты (демо)</p>
+                <ul class="footer-links">
+                    <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+                    <li><a href="mailto:info@cleanpro.example">info@cleanpro.example</a></li>
+                    <li><span>Москва, демонстрационный адрес</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 CleanPro Demo. Все данные на сайте демонстрационные.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
